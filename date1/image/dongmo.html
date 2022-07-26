@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var windowChild = null;
+
+        function openWindow() {
+            windowChild = window.open("https://www.youtube.com/", "window")
+            return false;
+        }
+
+        function closeWindow() {
+            windowChild.close()
+            return false;
+        }
+    </script>
+    <a href="#" onclick="return onpenWindow()">Open</a>
+    <a href="#" onclick="return closeWindow()">Close</a>
+</body>
+
+</html>

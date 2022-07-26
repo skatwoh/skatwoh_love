@@ -1,0 +1,48 @@
+a:hover {
+    background-color: rgb(238, 130, 161);
+    color: white;
+    box-shadow: 0px 0px 10px rgb(238, 130, 161);
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.banner {
+    height: 80px;
+    width: 600px;
+    background-color: bisque;
+}
+
+nav {
+    padding-top: 5px;
+    width: 600px;
+    height: 20px;
+}
+
+.box1 {
+    padding-top: 20px;
+}
+
+.img1 {
+    border: 1px solid pink;
+    width: 350px;
+    height: 220px;
+    border-radius: 5px;
+    background-color: pink;
+}
+
+.box {
+    width: 600px;
+    height: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    width: 600px;
+    height: 20px;
+    background-color: orangered;
+}

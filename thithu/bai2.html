@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bai2.css" rel="stylesheet">
+    <script src="bai2.js"></script>
+</head>
+
+<body>
+    <center>
+        <div class="box">
+            <h1>Đăng kí thành viên</h1>
+            <div class="box1">
+                <tr>
+                    <td class="txt">Họ tên</td>
+                    <td>
+                        <input type="text" name="hoten" id="hoten" placeholder="Nhập họ tên">
+                    </td>
+                    <br>
+                    <span id="hoten_error" class="error"></span>
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <td class="txt">Email</td>
+                    <td>
+                        <input type="text" name="email" id="email" placeholder="Nhập email">
+                    </td>
+                    <br>
+                    <span id="email_error" class="error"></span>
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <td class="txt">Số điện thoại</td>
+                    <td>
+                        <input type="text" name="sdt" id="sdt" placeholder="Nhập số điện thoại">
+                    </td>
+                    <br>
+                    <span id="sdt_error" class="error"></span>
+                </tr>
+                <br>
+                <br>
+                <tr class="box2">
+                    <td class="txt">User</td>
+                    <td>
+                        <input class="input1" type="text" name="user" id="user" placeholder="Nhập user">
+                    </td>
+                    <br>
+                    <span id="user_error" class="error"></span>
+                </tr>
+                <br>
+                <br>
+                <tr class="box2">
+                    <td class="txt">Pass</td>
+                    <td>
+                        <input type="password" name="pass" id="pass" placeholder="Nhập pass">
+                    </td>
+                    <br>
+                    <span id="pass_error" class="error"></span>
+                </tr>
+                <br>
+                <br>
+                <tr class="box2">
+                    <td class="txt">Repass</td>
+                    <td>
+                        <input type="password" name="repass" id="repass" placeholder="Nhập repass">
+                    </td>
+                    <br>
+                    <span id="repass_error" class="error"></span>
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <td class="txt">Bạn biết chúng tôi</td>
+                    <td>
+                        <input type="radio" name="bangt" id="bangt" value="1">Bạn bè
+                        <input type="radio" name="bangt" id="bangt" value="2">Qua fb
+                    </td>
+                    <br>
+                    <span id="bangt_error" class="error"></span>
+                </tr>
+                <br>
+                <br>
+                <button type="button" name="dangki" id="dangki" onclick="dangki()">Đăng kí</button>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>

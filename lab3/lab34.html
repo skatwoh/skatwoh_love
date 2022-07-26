@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="Rock" onclick="getValue(0);" />
+    <input type="button" value="Paper" onclick="getValue(1);" />
+    <input type="button" value="Scissors" onclick="getValue(2);" />
+    <script>
+        var arr = ['Rock', 'Paper', 'Scissors'];
+
+        var x = {
+            'Rock': 0,
+            'Paper': 1,
+            'Scissors': 2
+        };
+
+        var c = x;
+        var s = Math.floor(Math.random() * 3);
+        chon(x);
+
+        function chon(x) {
+            if (c = s) {
+                alert("Hòa");
+            } else {
+                alert("Chưa đúng.");
+            }
+        }
+    </script>
+</body>
+
+</html>

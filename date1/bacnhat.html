@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let a = prompt("Nhập hệ số a của pt bậc nhất: ");
+        let b = prompt("Nhập hệ số a của pt bậc nhất: ");
+        if (a == "" || b == "") {
+            alert("Bạn chưa nhập đủ hệ số");
+        } else {
+            a = Number(a);
+            b = Number(b);
+            giai_ptb1(a, b);
+        }
+
+        function giai_ptb1(a, b) {
+            if (a == 0 && b == 0) {
+                alert("Pt vô số nghiệm");
+            } else if (a == 0 && b != 0) {
+                alert("Pt vô nghiệm");
+            } else if (a != 0 && b == 0) {
+                alert("Pt có nghiệm x = 0");
+            } else {
+                alert("Pt có nghiệm x = " + (-b / a));
+            }
+        }
+    </script>
+</body>
+
+</html>

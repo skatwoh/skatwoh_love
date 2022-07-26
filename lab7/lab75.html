@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            color: red;
+        }
+        
+        .wrapper {
+            margin: 5px auto;
+            display: flex;
+        }
+        
+        .wrapper1 {
+            background-color: aqua;
+            margin: 5px auto;
+            display: flex;
+        }
+        
+        .center {
+            border: 1px solid pink;
+            padding: 20px;
+            width: auto;
+            margin: auto;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        
+        .binput {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="center">
+            <h2 style="text-align: center; margin-bottom: 50px;">Đặt hàng</h2>
+            <form onsubmit="return kiemtra();">
+                <table>
+                    <tr>
+                        <td style="width: 150px">Sản phẩm</td>
+                        <td style="width: 250px"><input type="text" id="sanpham"></td>
+                        <td><span class="error" id="sp_err"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Loại</td>
+                        <td><select id="loai>">
+                                <option value="1">Điện thoại</option>
+                                <option value="2">Laptop</option>
+                                <option value="3">Máy tính bảng</option>
+                                <option value="4">Phụ kiện</option>
+                            </select></td>
+                        </select>
+                        </td>
+                        <td></td> <span class="error" id="loai_err"></span>
+                    </tr>
+                    <tr>
+                        <td>Đơn Giá</td>
+                        <td><input type="text" id="dongia"></td>
+                        <td><span class="error" id="dongia_err"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Nơi nhận hàng</td>
+                        <td><input type="radio" id="noithanh" name="noinhan" value="Nội thành" onclick="chonphivc()">
+                            <label for="html">Nội thành</label>
+                            <input type="radio" id="ngoaithanh" name="noinhan" value="Ngoại thành" onclick="chonphivc()">
+                            <label for="html">Ngoại thành</label></td>
+                        <td><span class="error" id="noinhan_err"></span></td>
+                    </tr>
+                    <tr style="display: none">
+                        <td>Phí vận chuyển</td>
+                        <td> <input type="text" id="phivc"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input class="binput" type="submit" value="submit"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script>
+        function chonphivc() {
+            var radiok = document.getElementsByName("noinhan");
+            if (radiok[0].checked == true) {
+                document.getElementById("phivc").value = "";
+                document.getElementById("phivc").parentElement.style.display = "none";
+                document.getElementById("noinhan_err").innerHTML = "";
+            } else if (radiok[1].checked == true) {
+                document.getElementById("phivc").value = "10000";
+                document.getElementById("phivc").parentElement.style.display = "table-row";
+                document.getElementById("noinhan_err").innerHTML = "";
+            }
+        }
+
+        function kiemtra() {
+            var sp = document.getElementById("sanpham");
+            if (sp.value.length == 0) {
+                document.getElementById("sp_err").innerHTML = "Không được để trống";
+                sp.focus();
+                return false;
+            } else {
+                document.getElementById("sp_err").innerHTML = "";
+            }
+
+            var loai = document.getElementById("loai");
+
+            if (loai.value == "Chọn loại") {
+                document.getElementById("loai_err").innerHTML = "Không được để trống";
+                loai.focus();
+                return false;
+            } else {
+                document.getElementById("loai_err").innerHTML = "";
+            }
+
+            var dongia = document.getElementById("dongia");
+            if (dongia.value.length == 0) {
+                document.getElementById("dongia_err").innerHTML = "Không được để trống";
+                dongia.focus();
+                return false;
+            } else if (isNaN(dongia.value)) {
+                document.getElementById("dongia_err").innerHTML = "Phải là số";
+                dongia.focus();
+                return false;
+            } else if (parseFloat(dongia.value) < 0) {
+                document.getElementById("dongia_err").innerHTML = "Phải lớn hơn 0";
+                dongia.focus();
+                return false;
+            } else {
+                document.getElementById("dongia_err").innerHTML = "";
+            }
+
+            var radiok = document.getElementsByName("noinhan");
+            var chon = 0;
+            for (var i = 0; i < radiok.length; i++) {
+                if (radiok[i].checked == true) {
+                    chon = 1;
+                }
+            }
+            if (chon == 0) {
+                document.getElementById("noinhan_err").innerHTML = "Không được để trống";
+                return false;
+            }
+            alert("Đặt hàng thành công");
+            return false;
+        }
+    </script>
+</body>
+
+</html>

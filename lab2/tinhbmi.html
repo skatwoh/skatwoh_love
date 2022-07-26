@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính chỉ số BMI</title>
+</head>
+
+<body>
+    <script text="text/javascript">
+        let a = prompt("Mời nhập cân nặng: ");
+        let b = prompt("Mời nhập chiều cao: ");
+        if (a == "" || b == "") {
+            alert("Chưa nhập đủ dữ liệu.");
+        } else {
+            a = Number(a);
+            b = Number(b);
+            chiSo(a, b);
+        }
+
+        function chiSo(a, b) {
+            bmi = a / (b * b);
+            if (bmi < 18.5) {
+                alert("Thiếu cân");
+            } else if (bmi >= 18.5 && bmi <= 24.99) {
+                alert("Bình thường.");
+            } else if (bmi >= 25 && bmi <= 29.99) {
+                alert("Thừa cân.");
+            } else {
+                alert("Béo phì");
+            }
+        }
+    </script>
+</body>
+
+</html>

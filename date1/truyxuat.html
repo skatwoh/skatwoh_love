@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function hienThi() {
+            var node = document.getElementById("anhDiv");
+            node.innerHTML = "<img src='image/1.png'>";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="hoa">
+        <p>Hoa hong</p>
+        <p>hoa mai</p>
+        <p>hoa lan</p>
+    </div>
+    <h1 style="color: pink;">Just an example</h1>
+    <div id="one" class="example">Hi!</div>
+    <div id="two" class="example">Hi!</div>
+    <div id="three" class="something">Hi!</div>
+    <div id="anhDiv"></div>
+    <input type="button" value="Hien thi anh" onclick="hienThi()">
+</body>
+<script>
+    console.log(document.getElementById("two"));
+    console.log(document.getElementsByTagName("div").item(1));
+    console.log(document.getElementsByTagName("div").namedItem("one"));
+    console.log(document.getElementsByClassName("example"));
+</script>
+
+</html>

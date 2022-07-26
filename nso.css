@@ -1,0 +1,45 @@
+nav {
+    width: 782px;
+    height: 20px;
+    background-color: #d17a30;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 30px;
+}
+
+a:hover {
+    color: rgb(76, 203, 238);
+}
+
+footer:hover {
+    background-color: aqua;
+}
+
+.box {
+    width: 220px;
+    height: 290px;
+    border: 2px solid black;
+    float: left;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+footer {
+    margin-top: 10px;
+    float: left;
+    width: 782px;
+    height: 20px;
+    background-color: #d17a30;
+}
+
+.theme {
+    width: 782px;
+}
+
+.box:hover {
+    background-color: bisque;
+    box-shadow: 5px transparent rosybrown;
+}

@@ -1,0 +1,80 @@
+a:hover {
+    background-color: rgb(238, 130, 161);
+    color: white;
+    box-shadow: 0px 0px 10px rgb(238, 130, 161);
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.banner {
+    height: 80px;
+    width: 600px;
+    background-color: bisque;
+}
+
+nav {
+    padding-top: 5px;
+    width: 600px;
+    height: 20px;
+}
+
+.box {
+    width: 600px;
+    height: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    width: 600px;
+    height: 20px;
+    background-color: orangered;
+}
+
+.tittle {
+    margin-top: 10px;
+    height: 80px;
+}
+
+.tittle h1 {
+    text-align: center;
+    color: white;
+}
+
+#tittle .khung {
+    margin-top: -17px;
+    border: 0.5px solid rgb(252, 92, 118);
+}
+
+.tittle h2 {
+    text-align: center;
+}
+
+.mucgia {
+    text-align: center;
+}
+
+.khung {
+    margin-top: 7px;
+    width: 560px;
+    border: 0.1px solid #192041;
+}
+
+table {
+    margin-top: 20px;
+}
+
+#checkAll,
+.check {
+    width: 15px;
+    height: 15px;
+    font-size: 40px;
+}
+
+td img:hover {
+    z-index: 1;
+}

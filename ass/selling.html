@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/selling.css">
+</head>
+
+<body>
+    <center>
+        <div class="box">
+            <header>
+                <div class="banner">
+                    <img src="img/Bugcat Bugcatsticker Sticker - Bugcat Bugcatsticker Heart - Discover & Share GIFs.gif" height="60px" width="60px">
+                    <img src="img/Bugcat Bugcatsticker Sticker - Bugcat Bugcatsticker Heart - Discover & Share GIFs.gif" height="60px" width="60px">
+                    <img src="img/Bugcat Bugcatsticker Sticker - Bugcat Bugcatsticker Heart - Discover & Share GIFs.gif" height="60px" width="60px">
+                </div>
+        </div>
+        </header>
+        <nav>
+            <a href="slide.html">SLIDE ẢNH</a>
+            <a href="selling.html">GIỎ HÀNG</a>
+            <a href="login.html">ĐĂNG KÍ</a>
+            <hr>
+        </nav>
+        <div class="tittle">
+            <h2>Bán hàng</h2>
+        </div>
+
+        <div class="mucgia">
+            <select name="price" id="filter">
+      <option value="0">Chọn mức giá</option>
+      <option value="1">Dưới 100</option>
+      <option value="2">Từ 100 đến 500</option>
+      <option value="3">Trên 500</option>
+    </select>
+        </div>
+        <center>
+            <div class="khung"></div>
+        </center>
+
+        <div class="container" style="width: 100% !important">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td><input type="checkbox" id="checkAll" /></td>
+                        <th>Hàng hóa</th>
+                        <th>Ảnh</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" class="check" /></td>
+                        <td>Iphone</td>
+                        <td>
+                            <img src="img/anh0.jpg" width="10px" height="10px">
+                        </td>
+                        <td>700</td>
+                        <td>
+                            <input type="number" value="0" min="0" step="1" disabled />
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="check" /></td>
+                        <td>SamSung</td>
+                        <td>
+                            <img src="img/anh0.jpg" width="10px" height="10px">
+                        </td>
+                        <td>400</td>
+                        <td>
+                            <input type="number" value="0" min="0" step="1" disabled />
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="check" /></td>
+                        <td>Nokia</td>
+                        <td>
+                            <img src="img/anh0.jpg" width="10px" height="10px">
+                        </td>
+                        <td>100</td>
+                        <td>
+                            <input type="number" value="0" min="0" step="1" disabled />
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="check" /></td>
+                        <td>Sony Xperia</td>
+                        <td>
+                            <img src="img/anh0.jpg" width="10px" height="10px">
+                        </td>
+                        <td>450</td>
+                        <td>
+                            <input type="number" value="0" min="0" step="1" disabled />
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="check" /></td>
+                        <td>Motorola</td>
+                        <td>
+                            <img src="img/anh0.jpg" width="10px" height="10px">
+                        </td>
+                        <td>180</td>
+                        <td>
+                            <input type="number" value="0" min="0" step="1" disabled />
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="check" /></td>
+                        <td>Oppo</td>
+                        <td>
+                            <img src="img/anh0.jpg" width="10px" height="10px">
+                        </td>
+                        <td>600</td>
+                        <td>
+                            <input type="number" value="0" min="0" step="1" disabled />
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="check" /></td>
+                        <td>Bphone</td>
+                        <td>
+                            <img src="img/anh0.jpg" width="10px" height="10px">
+                        </td>
+                        <td>90</td>
+                        <td>
+                            <input type="number" value="0" min="0" step="1" disabled />
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4">Tổng</th>
+                        <th id="tongtien"></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <footer>ĐÀO QUỐC KHÁNH</footer>
+        </div>
+        <script src="js/selling.js"></script>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàm</title>
+</head>
+
+<body>
+    <script text="text/javascript">
+        let a = prompt("Mời nhập a: ");
+        let b = prompt("Mời nhập b: ");
+        if (a == "" || b == "") {
+            alert("Bạn chưa nhập đủ dữ liệu.");
+        } else if (isNaN(a) || isNaN(b)) {
+            alert("Dữ liệu ko phải là số.")
+        } else {
+            a = Number(a);
+            b = Number(b);
+            alert("Tổng: " + tinhTong(a, b) + ", Hiệu: " + tinhHieu(a, b) + ", Tích: " + tinhTich(a, b) + ", Thương: " + tinhThuong(a, b) + ", UCLN: " + ucln(a, b));
+        }
+
+        function tinhTong(a, b) {
+            return a + b;
+        }
+
+        function tinhHieu(a, b) {
+            return a - b;
+        }
+
+        function tinhTich(a, b) {
+            return a * b;
+        }
+
+        function tinhThuong(a, b) {
+            return a / b;
+        }
+
+        function ucln(a, b) {
+            while (a * b != 0) {
+                if (a > b) {
+                    a %= b;
+                } else {
+                    b %= a;
+                }
+            }
+            return a + b;
+        }
+    </script>
+</body>
+
+</html>

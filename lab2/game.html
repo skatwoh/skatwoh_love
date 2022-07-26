@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+
+<body>
+    <script text="text/javascript">
+        var x = 10 + Math.round(5 * Math.random());
+
+        var a = prompt("Số nhập vào: ");
+        if (a == "") {
+            alert("Chưa nhập số.");
+        } else {
+            a = Number(a);
+            quay(a);
+        }
+
+        function quay(a) {
+            if (a = x) {
+                alert("Chúc mừng, bạn đã đoán đúng.");
+            } else if (a < x) {
+                alert("Giá tị của bạn nhỏ hơn số bí mật.");
+            } else {
+                alert("Giá trị của bạn lớn hơn số bí mật.");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+ // var str = "Hello mai phờ ren";
+ // var hoten = prompt("Hãy nhập họ và tên: ");
+ // alert(str + "không có gì" + hoten);
+ // var ykien = confirm("Hiệp có yêu Giang ở mọi vũ trụ.");
+ // alert(ykien);
+ // console.log(str + "chào");
+ //  var doanso = Math.random();
+ //  alert(doanso);
+ //  let funActivity = 'Let\' learn JavaScrip';
+ //  let str = "Hello, chào chào chào";
+ //  console.log(str.length);
+ //  alert(str.substring(0, 5));
+ //  let str = "Hello";
+ //  let str1 = 'my friend';
+ //  let str2 = str.concat("_", str1);
+ //  alert(str2);
+ //  alert(str2.toLowerCase());
+ //  alert(str2.toUpperCase());
+ //  let x = 7;
+ //  console.log(isNaN(x));
+ //  let highest0fWords = Math.max("hi", 3, "bye");
+ //  console.log(highest0fWords);
+
+ alert("Chiều cao còn lại là: " + screen.availHeight);
+ alert("Tổng số chiều cao là: " + screen.height);
+ alert("Bảng màu là: " + screen.colorDepth);
+ alert("Độ phân giải: " + screen.pixelDepth);
+
+ console.dir(navigator);
+ console.log(navigator.appCodeName);

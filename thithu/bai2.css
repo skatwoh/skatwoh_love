@@ -1,0 +1,31 @@
+.box {
+    width: 300px;
+    height: 520px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
+
+.txt {
+    float: left;
+    color: palevioletreds;
+}
+
+input {
+    border: 1px solid pink;
+}
+
+input:hover {
+    background-color: beige;
+}
+
+.error {
+    color: red;
+}
+
+#dangki {
+    border-radius: 5px;
+}
+
+#dangki:hover {
+    background-color: pink;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 520px;
+            height: 430px;
+            border: 1px solid violet;
+            color: white;
+        }
+        
+        .err {
+            color: red;
+        }
+        
+        h2 {
+            color: violet;
+        }
+        
+        .box1 {
+            color: violet;
+            float: left;
+            margin-left: 20px;
+        }
+        
+        .input1 {
+            margin-left: 40px;
+            margin-top: 5px;
+        }
+        
+        .box2 {
+            float: left;
+            display: flex;
+            margin: 5px auto;
+            border: 1px solid violet;
+            margin-top: 30px;
+            margin-left: 20px;
+            color: rgb(242, 26, 48);
+            background-color: antiquewhite;
+        }
+        
+        #dathang {
+            margin-left: 240px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        
+        #dathang:hover {
+            background-color: rgb(246, 149, 149);
+        }
+    </style>
+    <script src="bai2.js"></script>
+</head>
+
+<body>
+    <CENTER>
+
+        <div class="box">
+            <H2>ĐƠN HÀNG</H2>
+            <div class="box1">
+                <tr>
+                    <td>Tên KH</td>
+                    <td>
+                        <input class="input1" type="text" name="tenkh" id="tenkh" placeholder="Nhập tên khách hàng">
+                        <span id="err_tenkh" class="err"></span>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Email_.</td>
+                    <td>
+                        <input class="input1" type="text" name="email" id="email" placeholder="Nhập email">
+                        <span id="err_email" class="err"></span>
+                    </td>
+                </tr>
+            </div>
+            <div class="box2">
+                <table border="1px" id="gio">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Hàng hóa</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td> Motorola Edge X30</td>
+                            <td>4800000</td>
+                            <td>
+                                <input type="number" class="soluong" value="0" min="0" step="1" onchange="tinhtien()">
+                            </td>
+                            <td></td>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td> Samsung Galaxy A53</td>
+                            <td>8000000</td>
+                            <td>
+                                <input type="number" class="soluong" value="0" min="0" step="1" onchange="tinhtien()">
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td> Bphone A85</td>
+                            <td>3600000</td>
+                            <td>
+                                <input type="number" class="soluong" value="0" min="0" step="1" onchange="tinhtien()">
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>4</td>
+                            <td> Nokia G21</td>
+                            <td>5200000</td>
+                            <td>
+                                <input type="number" class="soluong" value="0" min="0" step="1" onchange="tinhtien()">
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td> Iphone 12</td>
+                            <td>16000000</td>
+                            <td>
+                                <input type="number" class="soluong" value="0" min="0" step="1" onchange="tinhtien()">
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot style="background-color: violet;">
+                        <tr>
+                            <th colspan="4">Tổng tiền</th>
+                            <td id="tongtien"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <input style="float: left;" type="submit" value="Đặt hàng" id="dathang" onclick="return validateForm();">
+        </div>
+    </CENTER>
+</body>
+
+</html>

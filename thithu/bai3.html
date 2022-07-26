@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai3.css">
+    <script>
+        var gio = document.getElementById("gio").children[1].children;
+        var tongtien = document.getElementById("tongtien");
+
+        function tinhtien(osoluong) {
+            var soluong = osoluong.value;
+            var dongia = osoluong.parentElement.previousElementSibling.innerHTML;
+            var thanhtien = osoluong.parentElement.nextElementSibling;
+            thanhtien.innerHTML = soluong * dongia;
+
+            var tong = 0;
+            for (var i = 0; i < gio.length; i++) {
+                var tinhtong = gio[i].lastElementChild.innerHTML
+                tong = tong + Number(tinhtong)
+
+            }
+            tongtien.innerHTML = tong
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <div class="box">
+            <h2>Đặt hàng</h2>
+            <table border="1px solid" id="gio">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Sản phẩm 1</td>
+                        <td>100000</td>
+                        <td>
+                            <input type="number" value="0" min="0" step="1" onchange="tinhtien(this);">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sản phẩm 2</td>
+                        <td>200000</td>
+                        <td>
+                            <input type="number" value="0" min="0" step="1" onchange="tinhtien(this);">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sản phẩm 3</td>
+                        <td>300000</td>
+                        <td>
+                            <input type="number" value="0" min="0" step="1" onchange="tinhtien(this);">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sản phẩm 4</td>
+                        <td>400000</td>
+                        <td>
+                            <input type="number" value="0" min="0" step="1" onchange="tinhtien(this);">
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="box1" colspan="4">Tổng tiền</td>
+                        <td id="tongtien"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </center>
+</body>
+
+</html>

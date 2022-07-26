@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <center>
+        <header>
+            <div class="box">
+                <header>
+                    <div class="banner">
+                        <img src="img/Bugcat Bugcatsticker Sticker - Bugcat Bugcatsticker Heart - Discover & Share GIFs.gif" height="60px" width="60px">
+                        <img src="img/Bugcat Bugcatsticker Sticker - Bugcat Bugcatsticker Heart - Discover & Share GIFs.gif" height="60px" width="60px">
+                        <img src="img/Bugcat Bugcatsticker Sticker - Bugcat Bugcatsticker Heart - Discover & Share GIFs.gif" height="60px" width="60px">
+                    </div>
+            </div>
+            </header>
+            <nav>
+                <a href="slide.html">SLIDE ẢNH</a>
+                <a href="selling.html">GIỎ HÀNG</a>
+                <a href="login.html">ĐĂNG KÍ</a>
+                <hr>
+            </nav>
+            <div class="box1">
+                <h2>ĐĂNG KÝ KHÓA HỌC</h2>
+                <form id="form">
+                    <div class="form-group">
+                        <h4>Họ tên </h4><input type="text" id="name">
+                        <span></span>
+                    </div>
+                    <div class="form-group">
+                        <h4>Email </h4><input type="email" id="email">
+                        <span></span>
+                    </div>
+                    <div classs="form-group">
+                        <h4>Số điện thoại </h4><input type="text" id="sdt">
+                        <span></span>
+                    </div>
+                    <div class="form-group">
+                        <h4>Khóa học
+                            <select id="khoahoc" onchange="fillDropdown()">
+                    <option value="10000">Khóa HTML</option>
+                    <option value="20000">Khóa JAVA</option>
+                    <option value="30000">Khóa C#</option>
+                </select>
+                        </h4>
+                        <span></span>
+                    </div>
+                    <div class="form-group">
+                        <h4>Học phí</h4> <input type="text" id="hocphi">
+                        <span></span>
+                    </div>
+                    <div class="form-group">
+                        <h4>Hình thức học</h4>
+                        <div id="frames">
+                            <div class="hinhthuc">
+                                <input type="radio" name="hinhthuc" value="1">Tại trường
+                                <input type="radio" name="hinhthuc" value="2">Học online
+                            </div>
+                        </div>
+                        <p class="gender p"></p>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="but">
+                        <button type="submit" class="button">Đăng ký</button>
+                    </div>
+
+                </form>
+
+            </div>
+            <footer>ĐÀO QUỐC KHÁNH</footer>
+            <script src="js/login.js"></script>
+            </div>
+    </center>
+</body>
+
+</html>

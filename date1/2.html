@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <script type="text/javascript">
+        var t, t1;
+
+        function onClickEvent() {
+            t = setTimeout("alert('Hi');", 1000);
+        }
+
+        function onClickEvent2() {
+            t1 = setInterval("alert('Hi');", 2000);
+        }
+
+        function clear() {
+            clearTimeout(t);
+        }
+
+        function clear1() {
+            clearInterval(t1);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="onClickEvent();">Click here!</button>
+    <button onclick="onClickEvent2();">Click here 1!</button>
+    <button onclick="clear1();">Clear</button>
+</body>
+
+</html>

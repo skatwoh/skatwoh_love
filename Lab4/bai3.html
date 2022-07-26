@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <script>
+        function dongho() {
+            var now = new Date();
+            var h = now.getHours();
+            var p = now.getMinutes();
+            var s = now.getSeconds();
+            setTimeout("dongho()", 1000);
+            var thongTin = h + ":" + p + ":" + s;
+            document.getElementById('time').innerHTML = thongTin;
+        }
+    </script>
+</head>
+
+<body>
+    <label id="time"></label>
+    <script>
+        dongho();
+    </script>
+</body>
+
+</html>
